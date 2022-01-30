@@ -17,12 +17,12 @@ class Usuario
     /**
      * @Column(type="string")
      */
-    private string $nome;
+    private string $nomeCurso;
 
     /**
      * @Column(type="integer")
      */
-    private int $cpf;
+    private int $ch;
 
     public function getId(): int
     {
@@ -35,23 +35,23 @@ class Usuario
         $this->id = $id;
     }
 
-    public function getNome(): string
+    public function getNomeCurso(): string
     {
-        return $this->nome;
+        return $this->nomeCurso;
     }
 
-    public function setNome($nome): void
+    public function setNomeCurso($nome): void
     {
-        $this->nome = $nome;
+        $this->nomeCurso = $nome;
     }
 
-    public function getCpf(): int
+    public function getCh(): int
     {
-        return $this->cpf;
+        return $this->ch;
     }
 
-    public function setCh($cpf): void
+    public function setCh($ch): void
     {
-        $this->ch = $cpf;
+        $this->ch = $ch;
     }
 }

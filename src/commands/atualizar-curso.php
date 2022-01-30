@@ -1,5 +1,5 @@
 <?php
-
+/*
 // IMPORTs das Classes
 use JoaoAmador\Agenda\Entity\Curso;
 use JoaoAmador\Agenda\Helper\EntityManagerFactory;
@@ -27,3 +27,4 @@ $curso->setNomeCurso($novoNomeCurso);
 $curso->setCh($novaCh);
 
 $entityManager->flush($curso); // confirmar as modificacoes no objeto curso, aqui faz o UPDATE
+*/

@@ -1,5 +1,5 @@
 <?php
-
+/*
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use JoaoAmador\Agenda\Helper\EntityManagerFactory;
@@ -18,3 +18,4 @@ $entityManager->persist($curso1);
 
 // salvar as modificação
 $entityManager->flush($curso1);
+*/
