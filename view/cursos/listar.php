@@ -5,16 +5,16 @@
 <a href="/novo" class="btn btn-primary mb-3">Novo Contato</a>
 
 <ul class="list-group">
-  <?php foreach ($cursos as $curso) : ?>
+  <?php foreach ($nomes as $nome) : ?>
     <li class="list-group-item d-flex justify-content-between">
       <?php
-      echo $curso->getNomeCurso() . " - " .
-        $curso->getCh() ?>
+      echo $nome->getNome() . " - " .
+        $nome->getCpf() ?>
 
       <span>
-        <a href="/alterar?id=<?= $curso->getId(); ?>" class="btn btn-warning 
+        <a href="/alterar?id=<?= $nome->getId(); ?>" class="btn btn-warning 
               btn-sm">Atualizar</a> &nbsp;
-        <a href="/excluir?id=<?= $curso->getId(); ?>" class="btn btn-danger 
+        <a href="/excluir?id=<?= $nome->getId(); ?>" class="btn btn-danger 
               btn-sm">Excluir</a> &nbsp;
       </span>
     </li>

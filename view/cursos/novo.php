@@ -2,15 +2,15 @@
 
 <h1> <?= $titulo ?> </h1>
 
-<form action="/salvar<?= isset($curso) ? '?id=' . $curso->getId() : ''; ?>" method="POST">
+<form action="/salvar<?= isset($nomeUsuario) ? '?id=' . $nomeUsuario->getId() : ''; ?>" method="POST">
     <div class="mb-3">
-        <label for="nomeCurso" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="nomeCurso" name="nomeCurso" value="<?= isset($curso) ? $curso->getNomeCurso() : ''; ?>" autofocus>
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nomeUsuario" value="<?= isset($nomeUsuario) ? $nomeUsuario->getNome() : ''; ?>" autofocus>
     </div>
 
     <div class="mb-3">
-        <label for="chCurso" class="form-label">CPF</label>
-        <input type="number" class="form-control" id="chCurso" name="chCurso" value="<?= isset($curso) ? $curso->getCh() : ''; ?>">
+        <label for="cpf" class="form-label">CPF</label>
+        <input type="number" class="form-control" id="cpf" name="cpf" value="<?= isset($nomeUsuario) ? $nomeUsuario->getCpf() : ''; ?>">
     </div>
 
     <div class="mb-3">

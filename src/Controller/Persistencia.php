@@ -3,7 +3,7 @@
 namespace JoaoAmador\Agenda\Controller;
 
 use JoaoAmador\Agenda\Infra\EntityManagerCreator;
-use JoaoAmador\Agenda\Entity\Curso;
+use JoaoAmador\Agenda\Entity\Usuario;
 
 
 class Persistencia implements InterfaceControladoraRequisicao
@@ -22,13 +22,13 @@ class Persistencia implements InterfaceControladoraRequisicao
     public function processaRequisicao(): void
     {
         // pegar dados do formulario $_POST, usando filtros
-        $nomeCurso = filter_input(INPUT_POST, 'nomeCurso', FILTER_SANITIZE_STRING);
-        $chCurso   = filter_input(INPUT_POST, 'chCurso', FILTER_VALIDATE_INT);
+        $nomeUser = filter_input(INPUT_POST, 'nomeUsuario', FILTER_SANITIZE_STRING);
+        $cpf   = filter_input(INPUT_POST, 'cpf', FILTER_VALIDATE_INT);
 
         // montar modelo curso
-        $curso = new Curso;
-        $curso->setNomeCurso($nomeCurso);
-        $curso->setCh($chCurso);
+        $user = new Usuario;
+        $user->setNome($nomeUser);
+        $user->setCpf($cpf);
 
         // ATUALIZAR
         // pegar dados do formulario $_GET, usando filtros
@@ -36,13 +36,13 @@ class Persistencia implements InterfaceControladoraRequisicao
 
         if (!is_null($id) && $id !== false) {
             // posso atualizar
-            $curso->setId($id);
+            $user->setId($id);
             // Como já temos o id, não precisa fazer o find,
             // basta fazer um merge (juntar) ja tenho um entidade montada, so que una
-            $this->entityManager->merge($curso);
+            $this->entityManager->merge($user);
         } else {
             // Inserir no Banco
-            $this->entityManager->persist($curso);
+            $this->entityManager->persist($user);
         }
 
         $this->entityManager->flush();

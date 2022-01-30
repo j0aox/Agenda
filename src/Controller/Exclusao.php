@@ -3,7 +3,8 @@
 namespace JoaoAmador\Agenda\Controller;
 
 use JoaoAmador\Agenda\Infra\EntityManagerCreator;
-use JoaoAmador\Agenda\Entity\Curso;
+//use JoaoAmador\Agenda\Entity\Curso;
+use JoaoAmador\Agenda\Entity\Usuario;
 
 class Exclusao implements InterfaceControladoraRequisicao
 {
@@ -30,7 +31,7 @@ class Exclusao implements InterfaceControladoraRequisicao
         }
 
         // pegar a referencia por id
-        $usuario = $this->entityManager->getReference(Curso::class, $id);
+        $usuario = $this->entityManager->getReference(Usuario::class, $id);
         //$curso = $entityManager->find($id);
 
         // apagar
