@@ -23,7 +23,10 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 Diga como essa etapa será:
 
 ```
-Dar exemplos
+Entre dentro da pasta do projeto e abra o prompt de comando e execute o seguinte comando
+```
+```
+composer install
 ```
 
 E repita:
