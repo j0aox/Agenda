@@ -21,7 +21,7 @@ class Usuario
     private string $nomeUsuario;
 
     /**
-     * @Column(type="integer")
+     * @Column(type="string", length=100)
      */
     //private int $ch;
     private int $cpf;

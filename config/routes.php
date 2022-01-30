@@ -6,7 +6,9 @@ use JoaoAmador\Agenda\Controller\{
     FormularioInsercao,
     Listar,
     Persistencia,
-    Inicio
+    Inicio,
+    FormularioInsercaoInfo,
+    PersistenciaInfo
 };
 
 return [
@@ -18,4 +20,7 @@ return [
     '/salvar'     => Persistencia::class,
     '/excluir'    => Exclusao::class,
     '/alterar'    => FormularioEdicao::class,
+    
+    '/add-info'   => FormularioInsercaoInfo::class,
+    '/salvar-info' => PersistenciaInfo::class
 ];

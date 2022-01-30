@@ -12,6 +12,8 @@
         $nome->getCpf() ?>
 
       <span>
+        <a href="/add-info" class="btn btn-success 
+              btn-sm">Add Info</a> &nbsp;
         <a href="/alterar?id=<?= $nome->getId(); ?>" class="btn btn-warning 
               btn-sm">Atualizar</a> &nbsp;
         <a href="/excluir?id=<?= $nome->getId(); ?>" class="btn btn-danger 

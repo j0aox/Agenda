@@ -10,7 +10,7 @@
 
     <div class="mb-3">
         <label for="cpf" class="form-label">CPF</label>
-        <input type="number" class="form-control" id="cpf" name="cpf" value="<?= isset($nomeUsuario) ? $nomeUsuario->getCpf() : ''; ?>">
+        <input type="number" class="form-control" id="birth-date" name="cpf" maxlength="14" value="<?= isset($nomeUsuario) ? $nomeUsuario->getCpf() : ''; ?>">
     </div>
 
     <div class="mb-3">
