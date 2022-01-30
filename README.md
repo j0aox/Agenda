@@ -10,7 +10,7 @@ Consulte **Implantação** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+Você precisa ter instalado na sua máquina o PHP e o MySQL
 
 ```
 Dar exemplos
