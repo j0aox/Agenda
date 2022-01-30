@@ -1,0 +1,20 @@
+{
+    "name": "joaoamador/agenda",
+    "description": "Agenda de contatos",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "JoaoAmador\\Agenda\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Amador",
+            "email": "nnettoolliveira@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.9",
+        "symfony/cache": "^5.3"
+    }
+}
