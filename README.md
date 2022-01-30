@@ -10,10 +10,10 @@ Consulte **Implantação** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
-Você precisa ter instalado na sua máquina o PHP e o MySQL
+
 
 ```
-Dar exemplos
+Você precisa ter instalado na sua máquina o PHP e o MySQL
 ```
 
 ### 🔧 Instalação
