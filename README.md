@@ -24,6 +24,7 @@ Na sua máquina você tem que ter instalado as seguintes tecnologia
 
 ```bash 
 Antes de executar o projeto, você terá que criar uma base de dados com o nome (contato)
+```
 
 ## 💻 Como executar o projeto
 ```bash
