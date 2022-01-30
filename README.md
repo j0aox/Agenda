@@ -1,6 +1,6 @@
 # AGENDA DE CONTATOS
 
-Um parágrafo da descrição do projeto vai aqui
+Uma agenda contatos simples, podendo adicionar, remover e atualizar os contatos
 
 ## 🚀 Começando
 
