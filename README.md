@@ -29,13 +29,16 @@ Antes de executar o projeto, você terá que criar uma base de dados com o nome 
 ## 💻 Como executar o projeto
 ```bash
 # Clonar o repositorio
-git clone https://github.com/j0aox/proffy.git
+git clone https://github.com/j0aox/Agenda.git
 
 # Entrar no diretório 
 cd Agenda
 
 # Instalar Dependências
 composer install
+
+# Criar as tabelas do banco
+vendor\bin\doctrine orm:schema-tool:create
 
 # Executar o servidor do php apontando para pasta public
 php -S localhost:8000 -t public/
